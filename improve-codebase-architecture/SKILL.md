@@ -1,6 +1,6 @@
 ---
 name: improve-codebase-architecture
-description: Scan a codebase for deepening opportunities, present them as a visual markdown report, then grill through whichever one you pick.
+description: Scan a codebase for deepening opportunities, present them as a visual markdown report, then interview the user about whichever one they pick.
 disable-model-invocation: true
 ---
 
@@ -54,9 +54,9 @@ See [MARKDOWN-REPORT.md](MARKDOWN-REPORT.md) for the full markdown scaffold, dia
 
 Do NOT propose interfaces yet. After the file is written, ask the user: "Which of these would you like to explore?"
 
-### 3. Grilling loop
+### 3. Interview loop
 
-Once the user picks a candidate, run the `/grilling` skill to walk the design tree with them — constraints, dependencies, the shape of the deepened module, what sits behind the seam, what tests survive.
+Once the user picks a candidate, run the `/interview-me` skill to resolve the consequential design ambiguities with them — constraints, dependencies, the shape of the deepened module, what sits behind the seam, what tests survive.
 
 Side effects happen inline as decisions crystallize — run the `/domain-modeling` skill to keep the domain model current as you go:
 
