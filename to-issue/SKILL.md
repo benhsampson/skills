@@ -30,6 +30,10 @@ is drafted.
 Run [`blind-spot-pass`](../blind-spot-pass/SKILL.md) against the idea
 (and the loaded Linear description, if any).
 
+Then stop and give the user a chance to respond — to react to the blind
+spots, correct course, or add context — before the interview begins. Do
+not start the interview in the same turn as the blind-spot pass.
+
 ## Interview
 
 Run [`interview-me`](../interview-me/SKILL.md) to pin down what the
