@@ -1,7 +1,6 @@
 ---
 name: interview-me
 description: Resolve consequential ambiguity before implementation, one question at a time.
-disable-model-invocation: true
 ---
 
 Interview me one question at a time about anything ambiguous, prioritize questions where my answer would change the architecture.
