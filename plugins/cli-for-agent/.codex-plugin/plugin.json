@@ -1,0 +1,21 @@
+{
+  "name": "cli-for-agent",
+  "version": "1.0.0+codex.1",
+  "description": "Patterns for designing CLIs that coding agents can run reliably: non-interactive flags, layered help with examples, pipelines, actionable errors, idempotency, and dry-run.",
+  "author": {
+    "name": "Personal Codex port; original by Cursor"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "CLI for Agents (Codex)",
+    "shortDescription": "Build and review CLIs that agents can run reliably.",
+    "longDescription": "Patterns for designing CLIs that coding agents can run reliably: non-interactive flags, layered help with examples, pipelines, actionable errors, idempotency, and dry-run.",
+    "developerName": "Personal Codex ports",
+    "category": "Productivity",
+    "capabilities": [],
+    "defaultPrompt": [
+      "Use $cli-for-agents in this workspace."
+    ]
+  },
+  "license": "MIT"
+}

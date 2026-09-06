@@ -1,0 +1,6 @@
+interface:
+  display_name: "Continual Learning"
+  short_description: "Run the memory maintenance workflow"
+  default_prompt: "Use $continual-learning in this workspace."
+policy:
+  allow_implicit_invocation: false

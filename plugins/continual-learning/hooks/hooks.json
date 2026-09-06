@@ -1,0 +1,17 @@
+{
+  "description": "Periodically request incremental Codex memory maintenance after a completed turn.",
+  "hooks": {
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 -c \"import os,runpy; runpy.run_path(os.path.join(os.environ['PLUGIN_ROOT'],'scripts','learning.py'),run_name='__main__')\" stop",
+            "command_windows": "python -c \"import os,runpy; runpy.run_path(os.path.join(os.environ['PLUGIN_ROOT'],'scripts','learning.py'),run_name='__main__')\" stop",
+            "timeout": 10
+          }
+        ]
+      }
+    ]
+  }
+}

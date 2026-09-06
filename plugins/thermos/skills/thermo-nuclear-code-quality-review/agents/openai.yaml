@@ -1,0 +1,6 @@
+interface:
+  display_name: "Thermo Nuclear Code Quality Review"
+  short_description: "Run the requested code review workflow"
+  default_prompt: "Use $thermo-nuclear-code-quality-review in this workspace."
+policy:
+  allow_implicit_invocation: false

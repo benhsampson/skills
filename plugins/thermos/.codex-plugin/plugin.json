@@ -1,0 +1,21 @@
+{
+  "name": "thermos",
+  "version": "1.0.0+codex.1",
+  "description": "Thermo-nuclear branch review: deep correctness and security audits plus harsh code-quality rubrics, parallel subagents, thermos orchestration, and optional take-the-wheel and FSD merge-ready flows.",
+  "author": {
+    "name": "Personal Codex port; original by Cursor"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Thermos (Codex)",
+    "shortDescription": "Combine rigorous correctness and maintainability audits.",
+    "longDescription": "Thermo-nuclear branch review: deep correctness and security audits plus harsh code-quality rubrics, parallel subagents, thermos orchestration, and optional take-the-wheel and FSD merge-ready flows.",
+    "developerName": "Personal Codex ports",
+    "category": "Productivity",
+    "capabilities": [],
+    "defaultPrompt": [
+      "Use $thermos in this workspace."
+    ]
+  },
+  "license": "MIT"
+}

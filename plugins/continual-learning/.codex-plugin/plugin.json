@@ -1,0 +1,21 @@
+{
+  "name": "continual-learning",
+  "version": "1.0.0+codex.1",
+  "description": "Incrementally learns durable user preferences and workspace facts from transcript changes and keeps AGENTS.md up to date with plain bullet points.",
+  "author": {
+    "name": "Personal Codex port; original by Cursor"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Continual Learning (Codex)",
+    "shortDescription": "Keep workspace memory current from Codex conversations.",
+    "longDescription": "Incrementally learns durable user preferences and workspace facts from transcript changes and keeps AGENTS.md up to date with plain bullet points.",
+    "developerName": "Personal Codex ports",
+    "category": "Productivity",
+    "capabilities": [],
+    "defaultPrompt": [
+      "Use $continual-learning in this workspace."
+    ]
+  },
+  "license": "MIT"
+}

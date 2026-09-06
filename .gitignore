@@ -1,1 +1,7 @@
-.agents
+.agents/*
+!.agents/plugins/
+.agents/plugins/*
+!.agents/plugins/marketplace.json
+__pycache__/
+*.pyc
+.continual-learning/
