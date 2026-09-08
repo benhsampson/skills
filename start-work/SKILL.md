@@ -1,9 +1,12 @@
 ---
 name: start-work
-description: Choose branches, bases, and worktrees when starting or resuming Git implementation, or on explicit $start-work invocation. Discussion, planning, and read-only reviews alone create nothing.
+description: Choose branches, bases, and worktrees when the user explicitly invokes $start-work. Discussion, planning, and read-only reviews alone create nothing.
+disable-model-invocation: true
 ---
 
 # Start work
+
+This skill is explicit-only. Use it only when the user invokes `$start-work`; do not invoke it automatically when implementation work begins.
 
 Before implementation edits, choose the branch, base, and worktree using explicit user choices and applicable repository instructions. Outside Git, report this workflow inapplicable; do not initialize a repository. Discussion, planning, and read-only review permit discovery, but creation requires an explicit setup request.
 
