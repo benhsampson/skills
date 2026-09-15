@@ -1,6 +1,6 @@
 ---
 name: twig
-description: Twig creates a Git branch, worktree, and detached tmux session when available. Use whenever the user mentions the word "twig".
+description: Twig creates a Git branch and worktree. Use whenever the user mentions the word "twig".
 ---
 
 # Twig
@@ -35,16 +35,6 @@ If creation fails, inspect and report any partial state before retrying; do not 
 
 **Done when:** the worktree is registered at the intended path, its checked-out branch is the requested new branch, and HEAD matches the selected base commit.
 
-## 3. Prepare the session and report
+## 3. Report
 
-Check for `tmux` in the current execution environment. If absent, skip session creation. If present, derive a session name from the repository and branch using letters, digits, hyphens, and underscores; append a numeric suffix if the name is already taken.
-
-Create a detached shell session rooted in the worktree:
-
-```text
-tmux new-session -d -s <session-name> -c <absolute-path>
-```
-
-Do not attach or switch clients. Verify the session exists and its initial pane starts in the worktree. If tmux fails, retain the branch and worktree and report the session failure.
-
-**Done when:** the branch and worktree are verified, and tmux is verified, skipped as unavailable, or reported as failed. Report the selected base, branch, absolute worktree path, and `tmux attach-session -t <session-name>` command when a session was created. Root any subsequent authorized task work in the new worktree after reading its applicable repository instructions.
+Report the selected base, branch, and absolute worktree path. Root any subsequent authorized task work in the new worktree after reading its applicable repository instructions.
